@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bosh sahifa</title>
+</head>
+<body>
+    <header>
+        <h1>Sayt Nomi</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Bosh sahifa</a></li>
+                <li><a href="deposit.html">Depozit qo'yish</a></li>
+                <li><a href="withdraw.html">Chiqim qilish</a></li>
+                <li><a href="receipt.html">Chek joylash</a></li>
+                <li><a href="rules.html">Qoidalar</a></li>
+                <li><a href="support.html">Qolab-quvvatlash</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Xush kelibsiz!</h2>
+        <p>Bizning saytda depozit qo'yish va boshqa xizmatlardan foydalaning.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sayt Nomi</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Depozit qo'yish</title>
+</head>
+<body>
+    <header>
+        <h1>Depozit qo'yish</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Bosh sahifa</a></li>
+                <li><a href="deposit.html">Depozit qo'yish</a></li>
+                <li><a href="withdraw.html">Chiqim qilish</a></li>
+                <li><a href="receipt.html">Chek joylash</a></li>
+                <li><a href="rules.html">Qoidalar</a></li>
+                <li><a href="support.html">Qolab-quvvatlash</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Depozit qo'yish</h2>
+        <form id="depositForm">
+            <label for="depositAmount">Depozit darajasini tanlang:</label>
+            <select id="depositAmount" required>
+                <option value="100000">100,000 UZS</option>
+                <option value="500000">500,000 UZS</option>
+                <option value="1000000">1,000,000 UZS</option>
+                <option value="2000000">2,000,000 UZS</option>
+                <option value="3000000">3,000,000 UZS</option>
+            </select>
+            <input type="submit" value="Qo'yish">
+        </form>
+        <p>Har bir depozit turidan faqat 2 marta foydalanishingiz mumkin.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sayt Nomi</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chiqim qilish</title>
+</head>
+<body>
+    <header>
+        <h1>Chiqim qilish</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Bosh sahifa</a></li>
+                <li><a href="deposit.html">Depozit qo'yish</a></li>
+                <li><a href="withdraw.html">Chiqim qilish</a></li>
+                <li><a href="receipt.html">Chek joylash</a></li>
+                <li><a href="rules.html">Qoidalar</a></li>
+                <li><a href="support.html">Qolab-quvvatlash</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Chiqim qilish</h2>
+        <form id="withdrawForm">
+            <label for="withdrawAmount">Chiqiladigan mablag' miqdori (min 20,000 UZS):</label>
+            <input type="number" id="withdrawAmount" min="20000" required>
+            <label for="accountNumber">Hisob raqamingiz:</label>
+            <input type="text" id="accountNumber" required>
+            <input type="submit" value="Chiqim qilish">
+        </form>
+        <p>Har bir depozit turidan faqat 2 marta foydalanishingiz mumkin.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sayt Nomi</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chek joylash</title>
+</head>
+<body>
+    <header>
+        <h1>Chek joylash</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Bosh sahifa</a></li>
+                <li><a href="deposit.html">Depozit qo'yish</a></li>
+                <li><a href="withdraw.html">Chiqim qilish</a></li>
+                <li><a href="receipt.html">Chek joylash</a></li>
+                <li><a href="rules.html">Qoidalar</a></li>
+                <li><a href="support.html">Qolab-quvvatlash</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Chek joylash</h2>
+        <form id="receiptForm">
+            <label for="receiptImage">Chek rasm fayli:</label>
+            <input type="file" id="receiptImage" required>
+            <input type="submit" value="Yuborish">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sayt Nomi</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Qoidalar</title>
+</head>
+<body>
+    <header>
+        <h1>Qoidalar</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Bosh sahifa</a></li>
+                <li><a href="deposit.html">Depozit qo'yish</a></li>
+                <li><a href="withdraw.html">Chiqim qilish</a></li>
+                <li><a href="receipt.html">Chek joylash</a></li>
+                <li><a href="rules.html">Qoidalar</a></li>
+                <li><a href="support.html">Qolab-quvvatlash</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Qoidalar</h2>
+        <ul>
+            <li>Har bir obunachi depozit qo'yishi va o'z mablag'larini boshqarishi kerak.</li>
+            <li>Depozit qo'yilganda, mablag'lar har 24 soatda 7% ga oshadi.</li>
+            <li>Pul chiqarish so'rovi yuborilgandan so'ng, mablag'lar 20 soat ichida tushadi.</li>
+            <li>Har bir obunachi do'stlarini taklif qilish orqali bonuslar olish imkoniyatiga ega.</li>
+            <li>Pul chiqarish so'rovi yuborilganda, obunachilar hisob raqamlarini va chiqariladigan summani ko'rsatishlari kerak.</li>
+        </
